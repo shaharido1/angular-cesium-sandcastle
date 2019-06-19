@@ -2,7 +2,19 @@
   <ac-polyline-primitive-desc props="{
       width : polyline.width,
       positions: polyline.positions,
-      material: polyline.material
+      material: polyline.material,
+      eyeOffset : polyline.zIndex,
+      zIndex: 1
     }">
   </ac-polyline-primitive-desc>
+
+
+  <ac-label-primitive-desc props="{
+                  position: polyline.labelPostion,
+                  text: polyline.labelText,
+                  font: polyline.font,
+
+
+          }">
+  </ac-label-primitive-desc>
 </ac-layer>

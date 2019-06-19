@@ -10,8 +10,8 @@
   toggle planes
 </button>
 
-<ac-map [sceneMode]="sceneMode" id="main-map">
+<ac-map  id="main-map">
+  <plane-layer *ngIf="showPlane" ></plane-layer>
   <polygon-layer *ngIf="showPolygon"></polygon-layer>
   <polyline-layer *ngIf="showPolyline"></polyline-layer>
-  <plane-layer *ngIf="showPlane" ></plane-layer>
 </ac-map>

@@ -27,13 +27,16 @@ export class PolylineLayerComponent implements OnInit {
         id: '1',
         entity: new AcEntity({
           material: Cesium.Color.GREEN,
-          height: 0,
           outline: true,
-          width: 20,
-          positions: Cesium.Cartesian3.fromDegreesArrayHeights([
-            -120.0, 37.0, 100,
-            -120.0, 32.0, 100
-          ])
+          width: 1,
+          zIndex: new Cesium.Cartesian3(0, 0, -20),
+          labelText: "idosdfnhosdfnsdofn",
+          font : '16px Open Sans',
+          labelPostion: new Cesium.Cartesian3.fromDegrees( -120.0, 37.0),
+          positions: Cesium.Cartesian3.fromDegreesArray([
+              -120.0, 37.0,
+              -120.0, 32.0
+            ]),
         }
         ),
         actionType: ActionType.ADD_UPDATE

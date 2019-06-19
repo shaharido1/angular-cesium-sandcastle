@@ -1,9 +1,11 @@
-<ac-layer acFor="let plane of planes$" [context]="this" [show]="true">
+<ac-layer acFor="let plane of planes$" [context]="this" [show]="true" [zIndex]="2">
   <ac-billboard-primitive-desc props="{
         image:plane.image,
         position:plane.position,
         color:plane.color,
         eyeOffset : plane.zIndex
+        zIndex: 3
+
     }">
   </ac-billboard-primitive-desc>
 </ac-layer>
